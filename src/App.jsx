@@ -11,7 +11,7 @@ import Context from "./Components/utils/Context";
 function App() {
   return (
       <div className="App">
-        <Context></Context>
+        <Context>
           <Navbar/>
           <Routes>
           <Route path='/' element={<Home/>}/>
@@ -22,6 +22,7 @@ function App() {
           </Routes>
 
           <Footer/>
+          </Context>
           
       </div>
   );
